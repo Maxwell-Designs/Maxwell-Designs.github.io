@@ -87,3 +87,27 @@
     margin: 0;
     font-size: 15px;
 }
+
+
+/* Styles for phones */
+@media (max-width: 767px) {
+    .row {
+        display: block;
+    }
+
+    .col-md-4 {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    .socials {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
