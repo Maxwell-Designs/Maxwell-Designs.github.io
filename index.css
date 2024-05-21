@@ -2,8 +2,9 @@
     background: #ddd;
 }
 .container-fluid{
-    width: 100%;
-    overflow: hidden;
+    width: 90%;
+    height: 100%;
+    overflow: visible;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
 }
 .navbar-brand{
@@ -77,7 +78,7 @@
     background-color: #f8f9fa;
     text-align: center;
     padding: 20px 0;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
     color: #343a40;
