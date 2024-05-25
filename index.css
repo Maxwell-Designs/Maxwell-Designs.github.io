@@ -78,7 +78,7 @@
     background-color: #f8f9fa;
     text-align: center;
     padding: 20px 0;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
     color: #343a40;
