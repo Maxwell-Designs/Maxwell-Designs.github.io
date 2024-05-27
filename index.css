@@ -92,8 +92,9 @@
 
 /* Styles for phones */
 @media (max-width: 767px) {
-    .row {
-        display: block;
+    .profile-area {
+        display: flex;
+        height: 70vh;
     }
 
     .col-md-4 {
@@ -110,5 +111,8 @@
     .socials {
         text-align: center;
         margin-top: 10px;
+    }
+    .footer{
+        position: fixed;
     }
 }
