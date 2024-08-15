@@ -11,8 +11,8 @@
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-
-  <title>Anyika</title>
+  <link rel="icon" href="images/graphicfv.png" type="image/png">
+  <title>Anyika Maxwell</title>
 
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css"
@@ -31,6 +31,11 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <script>
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+  </script>  
 </head>
 
 <body class="sub_page">
@@ -42,7 +47,7 @@
           <a class="navbar-brand mr-5" href="index.html">
             <img src="images/graphic1.png" alt="">
             <span>
-              MAXWELL
+              MAXWELL designs
             </span>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -95,13 +100,11 @@
         <div class="row">
           <div class="col-md-6">
             <div class="contact_form ">
-              <form action="">
-                <input type="text" placeholder="Name ">
-                <input type="email" placeholder="Email">
-                <input type="text" placeholder="Message" class="message_input">
-                <button>
-                  Send
-                </button>
+              <form action="https://formspree.io/f/meojzjvg" method="POST">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Message" class="message_input" required></textarea>
+                <button type="submit">Send</button>
               </form>
             </div>
           </div>
@@ -117,42 +120,13 @@
     <!-- end contact section -->
 
   </div>
-  <!-- info section -->
-
-  <section class="info_section layout_padding">
-    <div class="footer_contact">
-      <div class="heading_container">
-        <h2>
-          Contact Us
-        </h2>
-      </div>
-      <div class="box">
-        <a href="" class="img-box">
-          <img src="images/location.png" alt="" class="img-1">
-          <img src="images/location-o.png" alt="" class="img-2">
-        </a>
-        <a href="" class="img-box">
-          <img src="images/call.png" alt="" class="img-1">
-          <img src="images/call-o.png" alt="" class="img-2">
-        </a>
-        <a href="" class="img-box">
-          <img src="images/envelope.png" alt="" class="img-1">
-          <img src="images/envelope-o.png" alt="" class="img-2">
-        </a>
-      </div>
-    </div>
-
-
-  </section>
-
-
-  <!-- end info section -->
+  
 
   <!-- footer section -->
   <section class="container-fluid footer_section">
     <p>
       Copyright &copy; 2024 ||
-      <a href="https://mashuel.github.io/">Anyika Maxwell</a>
+      <a href="https://maxwell-designs.github.io/">Anyika Maxwell</a>
     </p>
   </section>
   <!-- footer section -->

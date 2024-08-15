@@ -1,3 +1,16 @@
+/* Other existing CSS styles */
+
+/* Custom selection styling */
+::selection {
+  background-color: #e93f1a; /* Your selected highlight color */
+  color: #ffffff; /* The text color when highlighted */
+}
+
+::-moz-selection {
+  background-color: #e93f1a; /* Your selected highlight color */
+  color: #ffffff; /* The text color when highlighted */
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   color: #0c0c0c;
@@ -522,6 +535,80 @@ a:focus {
 .contact_section .contact_form input::placeholder {
   color: rgba(255, 255, 255, 0.8);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact_section .contact_form textarea {
+  width: 100%;
+  margin: 15px 0;
+  height: 150px; /* Adjust height as needed */
+  padding: 15px;
+  border: none;
+  outline: none;
+  background-color: #b87668;
+  color: #ffffff;
+  resize: none; /* Prevents the textarea from being resized */
+}
+
+.contact_section .contact_form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .contact_section .contact_form button {
   display: inline-block;
