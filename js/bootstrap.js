@@ -68,6 +68,137 @@
     subClass.__proto__ = superClass;
   }
 
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  function scrollCards(direction) {
+    console.log('scrollCards function called with direction:', direction); // Test code
+    const container = document.querySelector('.image-cards-container');
+    if (!container) {
+        console.error('Container not found');
+        return;
+    }
+    const cardWidth = document.querySelector('.image-card').offsetWidth;
+    container.scrollBy({
+        left: direction * cardWidth,
+        behavior: 'smooth'
+    });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   /**
    * --------------------------------------------------------------------------
    * Bootstrap (v4.3.1): util.js
