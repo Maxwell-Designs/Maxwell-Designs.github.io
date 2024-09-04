@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-N4W7QRT3GE"></script>
 <script>
@@ -43,10 +44,6 @@
       e.preventDefault();
     });
   </script>
-  
-
-
-
 </head>
 
 <body>
@@ -294,6 +291,102 @@
     <!-- end service section -->
 
 
+
+
+
+
+
+    <section class="image-cards-section">
+      <h2 class="design-projects-heading">GRAPHIC DESIGN PROJECTS</h2>
+      <div class="image-cards-container">
+          <div class="image-card">
+              <img src="OPICTS DESIGNS1.jpg" alt="Design 1">
+          </div>          
+          <div class="image-card">
+              <img src="roll-banner0.jpg" alt="Design 2">
+          </div>
+          <div class="image-card">
+              <img src="OPICTS DESIGNS2.jpg" alt="Design 3">
+          </div>
+          <div class="image-card">
+            <img src="img1.png" alt="Design 3">
+        </div>
+        <div class="image-card">
+          <img src="img2.jpg" alt="Design 3">
+      </div>
+      <div class="image-card">
+        <img src="OPICTS DESIGNS0.jpg" alt="Design 3">
+    </div>
+    <div class="image-card">
+      <img src="img4.jpg" alt="Design 3">
+  </div>
+<div class="image-card">
+  <img src="img6.jpg" alt="Design 3">
+</div>
+<div class="image-card">
+  <img src="img7.jpg" alt="Design 3">
+</div>
+<div class="image-card">
+  <img src="img8.jpg" alt="Design 3">
+</div>
+<div class="image-card">
+  <img src="img10.jpg" alt="Design 3">
+</div><div class="image-card">
+  <img src="img11.jpg" alt="Design 3">
+</div><div class="image-card">
+  <img src="img12.jpg" alt="Design 3">
+</div><div class="image-card">
+  <img src="img13.jpg" alt="Design 3">
+</div><div class="image-card">
+  <img src="img14.jpg" alt="Design 3">
+</div><div class="image-card">
+  <img src="img15.jpg" alt="Design 3">
+</div><div class="image-card">
+  <img src="img16.jpg" alt="Design 3">
+</div><div class="image-card">
+  <img src="img17.jpg" alt="Design 3">
+</div><div class="image-card">
+  <img src="img18.jpg" alt="Design 3">
+</div><div class="image-card">
+  <img src="img19.jpg" alt="Design 3">
+</div><div class="image-card">
+  <img src="img20.jpg" alt="Design 3">
+</div><div class="image-card">
+  <img src="img21.jpg" alt="Design 3">
+</div><div class="image-card">
+  <img src="img22.jpg" alt="Design 3">
+</div><div class="image-card">
+  <img src="img23.jpg" alt="Design 3">
+</div><div class="image-card">
+  <img src="img24.jpg" alt="Design 3">
+</div><div class="image-card">
+  <img src="img25.jpg" alt="Design 3">
+</div><div class="image-card">
+  <img src="img26.jpg" alt="Design 3">
+</div><div class="image-card">
+  <img src="img27.jpg" alt="Design 3">
+</div>
+          <!-- Add more image cards as needed -->
+      </div>
+      <button class="scroll-btn left-btn" onclick="scrollCards(-1)">&#8249;</button>
+      <button class="scroll-btn right-btn" onclick="scrollCards(1)">&#8250;</button>
+  </section>
+  
+  
+  
+  
+  
+    
+
+
+
+
+
+
+
+
+
+
     <!-- client section -->
     <section class="client_section layout_padding-top">
       <div class="d-flex justify-content-center">
@@ -488,7 +581,69 @@
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script src="carousel.js"></script>
+  <script>
+    document.addEventListener('keydown', function(event) {
+        if (event.ctrlKey && event.key === 'u') {
+            event.preventDefault();
+        }
+    });
+
+
+
+
+
+
+
+
+
+
+    let scrollInterval;
+const scrollAmount = 200; // Adjust this value according to the width of your image cards
+const scrollSpeed = 2000; // Time in milliseconds between each scroll action (e.g., 2000ms = 2s)
+
+function startAutoScroll() {
+    scrollInterval = setInterval(() => {
+        const container = document.querySelector('.image-cards-container');
+        const cardWidth = document.querySelector('.image-card').offsetWidth;
+        const maxScrollLeft = container.scrollWidth - container.clientWidth;
+        if (container.scrollLeft < maxScrollLeft) {
+            container.scrollBy({
+                left: scrollAmount,
+                behavior: 'smooth'
+            });
+        } else {
+            container.scrollLeft = 0; // Reset scroll position to the start
+        }
+    }, scrollSpeed);
+}
+
+function stopAutoScroll() {
+    clearInterval(scrollInterval);
+}
+
+// Start auto-scrolling when the page loads
+window.addEventListener('load', startAutoScroll);
+
+// Optional: Stop scrolling when mouse enters or leaves the container
+const container = document.querySelector('.image-cards-container');
+container.addEventListener('mouseenter', stopAutoScroll);
+container.addEventListener('mouseleave', startAutoScroll);
+
+function scrollCards(direction) {
+    const container = document.querySelector('.image-cards-container');
+    const cardWidth = document.querySelector('.image-card').offsetWidth;
+    container.scrollBy({
+        left: direction * cardWidth,
+        behavior: 'smooth'
+    });
+}
+
+</script>
+
+
 
 </body>
+
 
 </html>
