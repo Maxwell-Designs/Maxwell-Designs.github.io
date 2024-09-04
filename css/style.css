@@ -219,6 +219,8 @@ a:focus {
 
 
 
+
+
 /*end header section*/
 /* slider section */
 .slider_section {
@@ -442,6 +444,152 @@ a:focus {
   text-transform: uppercase;
 }
 
+
+
+
+
+
+
+
+
+
+
+.image-cards-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #e93f1a;
+  padding: 20px 0;
+}
+
+.image-cards-container {
+  display: flex;
+  overflow-x: auto; /* Allow horizontal scrolling */
+  overflow: hidden;
+  scroll-behavior: smooth; /* Smooth scrolling */
+  white-space: nowrap; /* Prevent wrapping of cards */
+}
+
+.image-card {
+  min-width: 300px;
+  margin: 0 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: inline-block; /* Ensure cards are inline */
+}
+
+.image-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #FB9F38;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.left-btn {
+  left: 10px;
+}
+
+.right-btn {
+  right: 10px;
+}
+
+.design-projects-heading {
+  text-align: center;
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .quote_section .box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -565,48 +713,6 @@ a:focus {
 .contact_section .contact_form textarea::placeholder {
   color: rgba(255, 255, 255, 0.8);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
